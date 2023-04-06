@@ -20,10 +20,10 @@ var clientCmd = &cobra.Command{
 	Short: "join as client",
 	Long:  `This command assigns you the role of a client in the connection`,
 	Run: func(cmd *cobra.Command, args []string) {
-		serverIP, _ := cmd.Flags().GetString("server-ip")
+		//serverIP, _ := cmd.Flags().GetString("server-ip")
 		fmt.Println("Launching client...")
 
-		conn, err := net.Dial("tcp", serverIP) // Replace with server's IP address
+		conn, err := net.Dial("tcp", "172.20.10.3:8080") //serverIP) // Replace with server's IP address
 		if err != nil {
 			fmt.Println(err)
 			return
