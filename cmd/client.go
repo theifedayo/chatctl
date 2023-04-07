@@ -20,6 +20,23 @@ var clientCmd = &cobra.Command{
 	Short: "join as client",
 	Long:  `This command assigns you the role of a client in the connection`,
 	Run: func(cmd *cobra.Command, args []string) {
+		var banner string = `
+		
+		
+	     ___           ___           ___                         ___                                 
+	    /\__\         /\  \         /\  \                       /\__\                                
+	   /:/  /         \:\  \       /::\  \         ___         /:/  /          ___                   
+	  /:/  /           \:\  \     /:/\:\  \       /\__\       /:/  /          /\__\                  
+	 /:/  /  ___   ___ /::\  \   /:/ /::\  \     /:/  /      /:/  /  ___     /:/  /      ___     ___ 
+	/:/__/  /\__\ /\  /:/\:\__\ /:/_/:/\:\__\   /:/__/      /:/__/  /\__\   /:/__/      /\  \   /\__\
+	\:\  \ /:/  / \:\/:/  \/__/ \:\/:/  \/__/  /::\  \      \:\  \ /:/  /  /::\  \      \:\  \ /:/  /
+	 \:\  /:/  /   \::/__/       \::/__/      /:/\:\  \      \:\  /:/  /  /:/\:\  \      \:\  /:/  / 
+	  \:\/:/  /     \:\  \        \:\  \      \/__\:\  \      \:\/:/  /   \/__\:\  \      \:\/:/  /  
+	   \::/  /       \:\__\        \:\__\          \:\__\      \::/  /         \:\__\      \::/  /   
+	    \/__/         \/__/         \/__/           \/__/       \/__/           \/__/       \/__/    
+		
+		`
+		fmt.Println(banner)
 		serverIP, _ := cmd.Flags().GetString("server-ip")
 		fmt.Println("Launching client...")
 
