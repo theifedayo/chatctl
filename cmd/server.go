@@ -38,8 +38,9 @@ var serverCmd = &cobra.Command{
 		
 		`
 		fmt.Println(banner)
-		fmt.Println("Chat with anyone via terminal on", utils.GetIPAddress())
+		fmt.Println("Chat with anyone via terminal")
 		fmt.Println("Launching server...")
+		fmt.Println("Share " + utils.GetIPAddress() + ":8080 to anyone you want to join you")
 
 		ln, err := net.Listen("tcp", ":8080")
 		if err != nil {
