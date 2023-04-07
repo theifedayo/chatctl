@@ -28,7 +28,3 @@ func GetIPAddress() string {
 
 	return "unable to determine IP address"
 }
-
-func main() {
-
-}

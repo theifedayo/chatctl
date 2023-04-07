@@ -21,23 +21,6 @@ var serverCmd = &cobra.Command{
 	Short: "join as server",
 	Long:  `This command assigns you the role of a server in the connection`,
 	Run: func(cmd *cobra.Command, args []string) {
-		var banner string = `
-		
-		
-	     ___           ___           ___                         ___                                 
-	    /\__\         /\  \         /\  \                       /\__\                                
-	   /:/  /         \:\  \       /::\  \         ___         /:/  /          ___                   
-	  /:/  /           \:\  \     /:/\:\  \       /\__\       /:/  /          /\__\                  
-	 /:/  /  ___   ___ /::\  \   /:/ /::\  \     /:/  /      /:/  /  ___     /:/  /      ___     ___ 
-	/:/__/  /\__\ /\  /:/\:\__\ /:/_/:/\:\__\   /:/__/      /:/__/  /\__\   /:/__/      /\  \   /\__\
-	\:\  \ /:/  / \:\/:/  \/__/ \:\/:/  \/__/  /::\  \      \:\  \ /:/  /  /::\  \      \:\  \ /:/  /
-	 \:\  /:/  /   \::/__/       \::/__/      /:/\:\  \      \:\  /:/  /  /:/\:\  \      \:\  /:/  / 
-	  \:\/:/  /     \:\  \        \:\  \      \/__\:\  \      \:\/:/  /   \/__\:\  \      \:\/:/  /  
-	   \::/  /       \:\__\        \:\__\          \:\__\      \::/  /         \:\__\      \::/  /   
-	    \/__/         \/__/         \/__/           \/__/       \/__/           \/__/       \/__/    
-		
-		`
-		fmt.Println(banner)
 		fmt.Println("Chat with anyone via terminal")
 		fmt.Println("Launching server...")
 		fmt.Println("Share " + utils.GetIPAddress() + ":8080 to anyone you want to join you")

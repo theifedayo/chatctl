@@ -1,7 +1,7 @@
 ### chatctl
 
 ## Description
-chatctl allows you to chat with anyone via terminal.
+chatctl allows you to chat in real-time with anyone via terminal.
 
 ## Installation
 
