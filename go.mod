@@ -1,4 +1,4 @@
-module github.com/theifedayo/chatctl/v0.9
+module github.com/theifedayo/chatctl
 
 go 1.19
 
