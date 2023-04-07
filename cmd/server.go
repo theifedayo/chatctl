@@ -12,6 +12,7 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
+	"github.com/theifedayo/chatctl/utils"
 )
 
 // serverCmd represents the server command
@@ -37,7 +38,7 @@ var serverCmd = &cobra.Command{
 		
 		`
 		fmt.Println(banner)
-		fmt.Println("Chat with anyone via terminal on" )
+		fmt.Println("Chat with anyone via terminal on", utils.GetIPAddress())
 		fmt.Println("Launching server...")
 
 		ln, err := net.Listen("tcp", ":8080")
