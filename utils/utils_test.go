@@ -5,21 +5,15 @@ import (
 	"testing"
 )
 
-func fakeInterfaces() ([]net.Interface, error) {
-	return nil, &net.OpError{}
-}
+//This test ensures that the GetIPAddress() function returns a valid IP address
+//and does not fail to determine the IP address
 
 func TestGetIPAddress(t *testing.T) {
-	//originalInterfaces := net.Interfaces
-	// defer func() { net.Interfaces = originalInterfaces }()
-	// net.Interfaces = fakeInterfaces
-
 	ip := GetIPAddress()
 
-	// expected := "unable to determine IP address"
-	// if ip != expected {
-	// 	t.Errorf("unexpected result: got %q, expected %q", ip, expected)
-	// }
+	if ip == "unable to determine IP address" {
+		t.Errorf("unable to determine IP address")
+	}
 
 	if net.ParseIP(ip) == nil {
 		t.Errorf("invalid IP address: %s", ip)
