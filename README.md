@@ -51,5 +51,7 @@ Terminal as server:
 Terminal as client:
 ![WhatsApp Image 2023-04-07 at 03 54 14](https://user-images.githubusercontent.com/47679952/230531840-896a990e-456d-4159-8848-02db415fab55.jpeg)
 
+Demo video: https://x.com/theifedayo_/status/1644247135016169475?s=46
+
 ## Contribution
 You can go ahead to getIPAddress and encrypt with a key before sharing, then client decrypts the ip address with same key
